@@ -1,11 +1,11 @@
 <template>
-  <p>Faq page</p>
+  <p>News Page</p>
 </template>
 
 <script>
 
 export default {
-  name: "ArticlesPage",
+  name: "ExchangesPage",
   components: {
   }
 }

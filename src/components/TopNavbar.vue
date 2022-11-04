@@ -1,7 +1,7 @@
 <template>
   <v-container fluid>
     <v-app-bar
-        elevation="4"
+
         color="#fff"
         app
     >

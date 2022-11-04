@@ -11,7 +11,7 @@ const routes = [
         component: MainPage
     },
     {
-        path: '/contact',
+        path: '/contacts/',
         name: 'ContactPage',
         component: ContactPage
     }

@@ -62,5 +62,9 @@ export default {
 </script>
 
 <style scoped>
+.text-center {
+  text-align: center;
+  color:#4070f4
+}
 
 </style>

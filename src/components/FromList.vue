@@ -11,7 +11,7 @@
       >
 
         <v-list-item-content>
-          <v-list-item-title v-text="item.name"></v-list-item-title>
+          <v-list-item-title v-text="item.name+'['+item.code_name+']'"></v-list-item-title>
         </v-list-item-content>
       </v-list-item>
     </v-list-item-group>

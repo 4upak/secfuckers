@@ -83,7 +83,12 @@ export default {
 
   },
   data: () => ({
-    tab: null
+    tab: null,
+    items: [
+      { text: 'Table', icon: 'mdi-clock' },
+      { text: 'List', icon: 'mdi-account' },
+      { text: 'Popular', icon: 'mdi-flag' },
+    ],
   })
 }
 </script>

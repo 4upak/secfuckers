@@ -55,12 +55,12 @@
                                 color="primary"
                             >
                               <v-list-item
-                                  v-for="(item, i) in items"
+                                  v-for="(item, i) in $store.getters.getCurrenciesFromLists"
                                   :key="i"
                               >
 
                                 <v-list-item-content>
-                                  <v-list-item-title v-text="item.text"></v-list-item-title>
+                                  <v-list-item-title v-text="item.name"></v-list-item-title>
                                 </v-list-item-content>
                               </v-list-item>
                             </v-list-item-group>
@@ -76,11 +76,11 @@
                                 color="primary"
                             >
                               <v-list-item
-                                  v-for="(item, i) in items"
+                                  v-for="(item, i) in $store.getters.getCurrenciesToLists"
                                   :key="i"
                               >
                                 <v-list-item-content>
-                                  <v-list-item-title v-text="item.text"></v-list-item-title>
+                                  <v-list-item-title v-text="item.name"></v-list-item-title>
                                 </v-list-item-content>
                               </v-list-item>
                             </v-list-item-group>
@@ -150,8 +150,12 @@ export default {
         { text: 'Audience', icon: 'mdi-account' },
         { text: 'Conversions', icon: 'mdi-flag' },
       ],
+      name: 'Currency Converter',
     }
   },
+  mounted() {
+    this.$store.dispatch('fetchCurrenciesLists')
+  }
 }
 </script>
 
